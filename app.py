@@ -8,7 +8,7 @@ from keras.models import load_model
 import tensorflow
 
 app = Flask(__name__)
-model = load_model('MLModel/LoraxV1.0.h5')
+model = load_model('MLModel/LoraxV1.1.h5')
 
 
 @app.route('/')
@@ -51,6 +51,8 @@ def predict():
         chance = "low"
     elif prediction < 0.75:
         chance = "moderate"
+    elif prediction < 0.9:
+        chance = "moderately high"
     else:
         chance = "high"
 

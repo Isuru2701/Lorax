@@ -18,6 +18,9 @@ def makeCall(region):
     weatherUrl = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={key}"
     weatherResponse = requests.get(weatherUrl)
     weather = weatherResponse.json()
-    return weather['wind']['speed'], weather['rain']['1h']
+    try:
+        return weather['wind']['speed'], weather['rain']['1h']
 
+    except:
+        return weather['wind']['speed'], 0
 
