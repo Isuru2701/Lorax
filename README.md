@@ -13,8 +13,8 @@ A wildfire prediction API built in lieu with an IOT system.
 {
   "region": "string",
     "date": "string", 
-    "temp": float,
-    "humidity": float  
+    "temp": 0.00,
+    "humidity": 0.00  
 
 }
 ```
