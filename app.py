@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 from flask import Flask, request
+from flask_cors import CORS
 
 import weatherAPI as api
 
@@ -10,6 +11,7 @@ import tensorflow
 app = Flask(__name__)
 model = load_model('MLModel/LoraxV1.1.h5')
 
+CORS(app)
 
 @app.route('/')
 def hello_world():  # put application's code here

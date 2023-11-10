@@ -4,3 +4,4 @@ keras
 requests
 datetime
 tensorflow
+flask_cors
