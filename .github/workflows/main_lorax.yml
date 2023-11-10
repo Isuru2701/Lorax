@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'lorax'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2CCBBFE0E03C43B4B5733C86BFDFBA39 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3774AA371E394422944000D17E7686D1 }}
